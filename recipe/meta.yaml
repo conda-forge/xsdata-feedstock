@@ -1,5 +1,5 @@
 {% set name = "xsdata" %}
-{% set version = "21.2" %}
+{% set version = "21.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a23a7bc51be43734e15ccf27a61a0c839b35e831eda5f170d9bb5040d4f2bc7f
+  sha256: 25a039f19d375e2ca494575634f8c5ac4f19d7cee54520852f717bb89716af74
 
 build:
   noarch: python
