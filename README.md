@@ -13,9 +13,9 @@ Development: https://github.com/tefra/xsdata
 
 Documentation: https://xsdata.readthedocs.io
 
-xsData is a complete XML data binding library for python allowing
-developers to access and use XML documents as simple objects rather
-than using DOM.
+xsData is a complete data binding library for python allowing developers
+to access and use XML and JSON documents as simple objects rather than
+using DOM.
 
 
 Current build status
