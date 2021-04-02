@@ -10,18 +10,18 @@ source:
   sha256: 0b0338c1165857497fe862cad25be94c097ea73ec3cfd3f34c4c48b5ac1f1cee
 
 build:
-  skip: true  # [py<36]
-  number: 0
+  noarch: python
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - xsdata = xsdata.cli:cli
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - click
     - click-default-group
     - click-log
@@ -30,8 +30,8 @@ requirements:
     - lxml
     - requests
     - toposort
-    - dataclasses  # [py<37]
-    - importlib-metadata  # [py<38]
+    - dataclasses
+    - importlib-metadata
 
 test:
   requires:
@@ -51,9 +51,9 @@ about:
   license_file: LICENSE
   summary: Naive XML Bindings for python
   description: |
-    xsData is a complete XML data binding library for python allowing
-    developers to access and use XML documents as simple objects rather
-    than using DOM.
+    xsData is a complete data binding library for python allowing developers
+    to access and use XML and JSON documents as simple objects rather than
+    using DOM.
   doc_url: https://xsdata.readthedocs.io
   dev_url: https://github.com/tefra/xsdata
 
