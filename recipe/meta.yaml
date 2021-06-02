@@ -20,8 +20,10 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - setuptools
   run:
     - python >=3.6
+    - setuptools
     - click
     - click-default-group
     - click-log
