@@ -23,7 +23,6 @@ requirements:
     - setuptools
   run:
     - python >=3.6
-    - setuptools
     - click
     - click-default-group
     - click-log
