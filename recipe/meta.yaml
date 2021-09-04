@@ -25,7 +25,6 @@ requirements:
     - python >=3.6
     - click
     - click-default-group
-    - click-log
     - docformatter
     - jinja2
     - lxml
