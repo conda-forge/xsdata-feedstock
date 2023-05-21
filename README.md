@@ -1,11 +1,11 @@
-About xsdata
-============
+About xsdata-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xsdata-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/tefra/xsdata
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xsdata-feedstock/blob/main/LICENSE.txt)
 
 Summary: Naive XML Bindings for python
 
