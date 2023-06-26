@@ -1,5 +1,5 @@
 {% set name = "xsdata" %}
-{% set version = "23.5" %}
+{% set version = "23.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f6964b161d344dbee41e281d8f286eed70fdbb514530c5e1c5c0bce503113a10
+  sha256: 695a38de23d270a772d803e260c17eef65d98354884a955e30f08075c0f574a8
 
 build:
   noarch: python
@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >=3.7
     - click
     - click-default-group
     - docformatter
@@ -32,6 +32,7 @@ requirements:
     - toposort
     - dataclasses
     - importlib-metadata
+    - typing-extensions
 
 test:
   requires:
