@@ -18,20 +18,18 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - setuptools
   run:
-    - python >=3.7
-    - click
-    - click-default-group
-    - docformatter
-    - jinja2
-    - lxml
+    - python >=3.8
+    - click >=5.0
+    - click-default-group >=1.2
+    - docformatter >=1.7.2
+    - jinja2 >=2.10
+    - lxml >=4.4.1
     - requests
-    - toposort
-    - dataclasses
-    - importlib-metadata
+    - toposort >=1.5
     - typing-extensions
 
 test:
