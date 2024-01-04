@@ -29,6 +29,7 @@ requirements:
     - jinja2 >=2.10
     - lxml >=4.4.1
     - requests
+    - ruff >=0.1.9
     - toposort >=1.5
     - typing-extensions
 
