@@ -1,13 +1,13 @@
 {% set name = "xsdata" %}
-{% set version = "26.2" %}
+{% set version = "26.10" %}
 
 package:
   name: {{ name|lower }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c631af71aaa75734f8ce92a08fcf8389d905dee2aab0b5032c9032e9071009a6
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 4bc944d9fa3955f84ecebb83c677e2f681687c002a777731a21104e8360a7522
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - setuptools >=77.0.0
   run:
     - python >={{ python_min }}
     - click >=8.0.0
@@ -47,7 +47,10 @@ about:
   home: https://github.com/tefra/xsdata
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - THIRD_PARTY_LICENSES.md
+    - xsdata/schemas/LICENSE.W3C
   summary: Naive XML Bindings for python
   description: |
     xsData is a complete data binding library for python allowing developers
