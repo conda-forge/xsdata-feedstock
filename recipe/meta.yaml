@@ -1,5 +1,5 @@
 {% set name = "xsdata" %}
-{% set version = "26.10" %}
+{% set version = "26.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4bc944d9fa3955f84ecebb83c677e2f681687c002a777731a21104e8360a7522
+  sha256: 50b7d5c99470a732c6182056d3dd4ca1908c8dc4232213555b81d47baaefe42e
 
 build:
   noarch: python
